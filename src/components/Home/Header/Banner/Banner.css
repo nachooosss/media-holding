@@ -1,0 +1,20 @@
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100dvw;
+  height: 100dvh;
+  background-image: linear-gradient(
+      rgba(255, 123, 0, 0.666),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(//images.unsplash.com/photo-1533827432537-70133748f5c8);
+}
+.titleTxt {
+  margin-right: 2;
+  font-weight: 700;
+  color: white;
+  cursor: default;
+}

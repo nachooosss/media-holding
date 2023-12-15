@@ -1,0 +1,32 @@
+.navbar {
+  position: absolute;
+  background-color: transparent;
+  box-shadow: none;
+}
+.grid-navbar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.btnNav {
+  margin-inline: 20px;
+  color: inherit;
+  display: block;
+  font-size: x-large;
+}
+
+.logo {
+  margin-right: 2px;
+  font-size: 100px;
+}
+
+.grid-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.txt-Logo {
+  font-weight: 700;
+  cursor: default;
+}
