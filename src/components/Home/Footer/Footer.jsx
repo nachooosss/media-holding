@@ -58,7 +58,7 @@ export default function Footer() {
           component="div"
           sx={{ flexGrow: 1, cursor: "default" }}
         >
-          Copyright © 2023 My Blog
+          Copyright © 2024 My Blog
         </Typography>
         <Typography
           variant="h6"
