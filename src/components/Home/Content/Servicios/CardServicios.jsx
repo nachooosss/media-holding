@@ -3,36 +3,41 @@ import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+import {
+  Button,
+  CardActionArea,
+  CardActions,
+  CardMedia,
+  Grid,
+} from "@mui/material";
 import { orange } from "@mui/material/colors";
 import SvgIcon from "@mui/material/SvgIcon";
 import "./CardServicios.css";
 import { Bebas_Neue } from "next/font/google";
-
 const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
 export default function CardServicios(props) {
+  const imgurl =
+    "https://media.a24.com/p/b1a3b835a1f8f3124bbde14606342918/adjuntos/296/imagenes/008/987/0008987928/1200x675/smart/feria-del-librojpg.jpg";
   return (
     <Card className="cardServicios">
-      <CardContent
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <SvgIcon
-          component={props.name.icon}
-          sx={{ fontSize: 100 }}
-          inheritViewBox
-        />
-
-        <Typography
-          className={inter.className}
-          variant="subtitle1"
-          color="white"
-          align="left"
+      <Grid container>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
+          <SvgIcon
+            component={props.name.icon}
+            sx={{ fontSize: 100 }}
+            inheritViewBox
+          />
+        </Grid>
+        <Grid item xs={12}>
           <Typography
             className={inter.className}
             gutterBottom
@@ -41,26 +46,67 @@ export default function CardServicios(props) {
             sx={{
               display: "flex",
               justifyContent: "left",
-              color: props.name.color,
+              color: "white",
+              marginBlock: "15px",
             }}
           >
             {props.name.name}
           </Typography>
-          {props.name.txt}
-        </Typography>
-      </CardContent>
-      <Button
-        className={inter.className}
-        variant="outlined"
-        sx={{
-          float: "right",
-          border: "1px solid orange",
-          color: orange[700],
-          fontSize: 20,
-        }}
-      >
-        Ver más
-      </Button>
+        </Grid>
+        <Grid item xs={12}>
+          <CardMedia
+            sx={{
+              height: 180,
+              borderRadius: "10px",
+              backgroundImage:
+                "linear-gradient(rgba(48, 23, 0, 0.666),rgba(0, 0, 0, 0.5)),url(https://media.a24.com/p/b1a3b835a1f8f3124bbde14606342918/adjuntos/296/imagenes/008/987/0008987928/1200x675/smart/feria-del-librojpg.jpg;",
+            }}
+            title="green iguana"
+          >
+            <SvgIcon
+              component={props.name.icon}
+              sx={{ fontSize: 200, float: "right", marginRight: "-80px" }}
+              inheritViewBox
+            />
+          </CardMedia>
+        </Grid>
+        <Grid item xs={12}>
+          <Typography
+            className={inter.className}
+            variant="subtitle1"
+            color="white"
+            align="justify"
+            sx={{
+              marginBlock: "15px",
+            }}
+          >
+            {props.name.txt}
+          </Typography>
+        </Grid>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: "flex",
+            justifyContent: "end",
+            alignItems: "end",
+            height: "100%",
+          }}
+        >
+          <Button
+            className={inter.className}
+            variant="outlined"
+            sx={{
+              float: "right",
+              border: "1px solid orange",
+              color: orange[700],
+              fontSize: 20,
+            }}
+          >
+            Ver más
+          </Button>
+        </Grid>
+      </Grid>
     </Card>
   );
 }
