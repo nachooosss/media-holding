@@ -2,13 +2,10 @@
 
 import * as React from "react";
 import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
 import CardContent from "@mui/material/CardContent";
-import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import { orange } from "@mui/material/colors";
 import { Grid } from "@mui/material";
-
+import "./Testimonios.css";
 import { Bebas_Neue } from "next/font/google";
 const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
@@ -56,6 +53,7 @@ export default function Testimonios() {
           Testimonios
         </Typography>
       </Grid>
+
       {clients.map((person, index) => (
         <Grid
           key={index}
@@ -66,19 +64,7 @@ export default function Testimonios() {
             mx: 2,
           }}
         >
-          <Card sx={{ p: 5, borderBottom: "orange 10px solid" }}>
-            <CardHeader
-              avatar={
-                <Avatar
-                  className={inter.className}
-                  sx={{ bgcolor: orange[500] }}
-                  aria-label="recipe"
-                >
-                  {person.avatar}
-                </Avatar>
-              }
-              title={person.name}
-            />
+          <Card className="cardPerson">
             <CardContent>
               <Typography
                 className={inter.className}

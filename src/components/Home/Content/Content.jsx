@@ -1,17 +1,18 @@
 import React from "react";
 import Testimonios from "./Testimonios/Testimonios";
 import Consultas from "./Consultas/Consultas";
+import bgimg from "../../../assets/background/bgtestimonios.jpg";
 
 const Content = () => {
   return (
     <div>
       <div
         style={{
-          borderTop: "2px solid orange",
           paddingTop: 15,
           position: "relative",
           width: "100dvw",
           height: "100dvh",
+          backgroundImage: `url(../../../assets/background/bgtestimonios.jpg)`,
         }}
       >
         <Testimonios></Testimonios>
