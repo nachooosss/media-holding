@@ -8,6 +8,12 @@ const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 const Servicios = () => {
   const servicios = [
     {
+      name: "EVENTOS",
+      icon: RAP,
+      color: "grey",
+      txt: "Ofrecemos una amplia gama de servicios, con el objetivo de crear experiencias inolvidables para tus clientes y colaboradores. Nos adaptamos a los requerimientos y particularidades del evento.",
+    },
+    {
       name: "ARTÍCULOS PROMOCIONALES",
       icon: RAP,
       color: "orange",
@@ -18,12 +24,6 @@ const Servicios = () => {
       icon: RAP,
       color: "cyan",
       txt: "Diseñamos y confeccionamos variedad de exhibidores para puntos de ventas, para impulsar tus productos y cautivar a tus clientes.",
-    },
-    {
-      name: "EVENTOS",
-      icon: RAP,
-      color: "grey",
-      txt: "Ofrecemos una amplia gama de servicios, con el objetivo de crear experiencias inolvidables para tus clientes y colaboradores. Nos adaptamos a los requerimientos y particularidades del evento.",
     },
     {
       name: "IMPRESIÓN DIGITAL",
