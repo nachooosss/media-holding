@@ -50,11 +50,15 @@ export default function CardServicios(props) {
               backgroundImage:
                 "linear-gradient(rgba(48, 23, 0, 0.666),rgba(0, 0, 0, 0.5)),url(https://media.a24.com/p/b1a3b835a1f8f3124bbde14606342918/adjuntos/296/imagenes/008/987/0008987928/1200x675/smart/feria-del-librojpg.jpg;",
             }}
-            title="green iguana"
           >
             <SvgIcon
               component={props.name.icon}
-              sx={{ fontSize: 200, float: "right", marginRight: "-80px" }}
+              sx={{
+                fontSize: 200,
+                float: "right",
+                marginRight: "-80px",
+                marginTop: "-10px",
+              }}
               inheritViewBox
             />
           </CardMedia>
