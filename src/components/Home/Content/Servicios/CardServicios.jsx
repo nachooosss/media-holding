@@ -1,15 +1,6 @@
 "use client";
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
-import {
-  Button,
-  CardActionArea,
-  CardActions,
-  CardMedia,
-  Grid,
-} from "@mui/material";
+import { Card, Typography, Button, CardMedia, Grid } from "@mui/material";
 import { orange } from "@mui/material/colors";
 import SvgIcon from "@mui/material/SvgIcon";
 import "./CardServicios.css";
@@ -17,8 +8,6 @@ import { Bebas_Neue } from "next/font/google";
 const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
 export default function CardServicios(props) {
-  const imgurl =
-    "https://media.a24.com/p/b1a3b835a1f8f3124bbde14606342918/adjuntos/296/imagenes/008/987/0008987928/1200x675/smart/feria-del-librojpg.jpg";
   return (
     <Card className="cardServicios">
       <Grid container>
@@ -97,7 +86,6 @@ export default function CardServicios(props) {
             className={inter.className}
             variant="outlined"
             sx={{
-              float: "right",
               border: "1px solid orange",
               color: orange[700],
               fontSize: 20,

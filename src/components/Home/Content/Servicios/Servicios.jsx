@@ -76,7 +76,9 @@ const Servicios = () => {
           <Grid
             key={index}
             item
-            xs={4}
+            xs={12}
+            md={6}
+            lg={4}
             sx={{
               display: "flex",
               justifyContent: "center",
