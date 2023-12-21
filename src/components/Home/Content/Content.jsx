@@ -12,10 +12,7 @@ const Content = () => {
           position: "relative",
           width: "100dvw",
           height: "100dvh",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "100% 100%",
-
-          backgroundImage: `url(${bgimg.src})`,
+          background: "linear-gradient(to right, #ff741e,  #fcff55 100%)",
         }}
       >
         <Testimonios></Testimonios>
