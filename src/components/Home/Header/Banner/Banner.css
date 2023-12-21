@@ -6,11 +6,7 @@
   background-repeat: no-repeat;
   width: 100dvw;
   height: 100dvh;
-  background-image: linear-gradient(
-      rgba(255, 123, 0, 0.666),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url(//images.unsplash.com/photo-1533827432537-70133748f5c8);
+  background-image: url(../../../../assets/background/bgheader.jpg);
 }
 .titleTxt {
   margin-right: 2;

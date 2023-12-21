@@ -25,6 +25,12 @@ export default function Testimonios() {
         alignItems: "center",
       }}
     >
+      <div id="b" className="inversePair">
+        B
+      </div>
+      <div id="a" className="inversePair">
+        A
+      </div>
       <Grid item xs={12}>
         <Typography
           className={inter.className}

@@ -1,7 +1,7 @@
 import React from "react";
 import Testimonios from "./Testimonios/Testimonios";
 import Consultas from "./Consultas/Consultas";
-import bgimg from "../../../assets/background/bgtestimonios.jpg";
+import bgimg from "@/assets/background/bgtestimonios.jpg";
 
 const Content = () => {
   return (
@@ -12,7 +12,10 @@ const Content = () => {
           position: "relative",
           width: "100dvw",
           height: "100dvh",
-          backgroundImage: `url(../../../assets/background/bgtestimonios.jpg)`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "100% 100%",
+
+          backgroundImage: `url(${bgimg.src})`,
         }}
       >
         <Testimonios></Testimonios>
