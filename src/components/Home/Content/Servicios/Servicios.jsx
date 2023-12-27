@@ -14,39 +14,39 @@ const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 const Servicios = () => {
   const servicios = [
     {
-      name: "EVENTOS",
+      name: "EVENTOS CORPORATIVOS",
       icon: Event,
-      txt: "Ofrecemos una amplia gama de servicios, con el objetivo de crear experiencias inolvidables para tus clientes y colaboradores. Nos adaptamos a los requerimientos y particularidades del evento.",
+      txt: "Creamos experiencias inolvidables para tu cliente.",
       bgImg: BTLImg,
     },
     {
       name: "ARTÍCULOS PROMOCIONALES",
       icon: Promotion,
-      txt: "Contamos con la mayor variedad de artículos promocionales que se ajustan a presupuestos y a tiempos de ejecución. Trabajamos con productos locales y extranjeros.",
-      bgImg: BTLImg,
-    },
-    {
-      name: "EXHIBIDORES",
-      icon: Displays,
-      txt: "Diseñamos y confeccionamos variedad de exhibidores para puntos de ventas, para impulsar tus productos y cautivar a tus clientes.",
+      txt: "Trabajamos con productos locales y extranjeros.",
       bgImg: BTLImg,
     },
     {
       name: "IMPRESIÓN DIGITAL",
       icon: Printer,
-      txt: "Nos aseguramos de que no se pase por alto ningún detalle, realizamos todo tipo de impresiones desde stickers hasta rotulados para tu negocio.",
+      txt: "Todo tipo de impresiones desde stickers hasta rotulados.",
       bgImg: PrinterImg,
+    },
+    {
+      name: "EXHIBIDORES",
+      icon: Displays,
+      txt: "Diseñamos y confeccionamos variedad de exhibidores.",
+      bgImg: BTLImg,
     },
     {
       name: "LETREROS",
       icon: Signs,
-      txt: "Fabricamos de tipo de letreros y señalizaciones para interior y exterior. En diferentes materiales, con tu imagen corporativa o mensajes publicitarios.",
+      txt: "Nos adaptamos a los requerimientos y particularidades del evento.",
       bgImg: BTLImg,
     },
     {
       name: "BTL",
       icon: BTL,
-      txt: "Creamos experiencias de marca. Nos enfocamos en aumentar el conocimiento de la marca y promover historias que impacten.",
+      txt: "Creamos experiencias de marca.",
       bgImg: BTLImg,
     },
   ];
@@ -56,14 +56,19 @@ const Servicios = () => {
       spacing={2}
       sx={{
         my: 5,
+        mt: 15,
       }}
     >
       <Grid
         item
         xs={12}
-        sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
-        <Typography
+        {/* <Typography
           className={inter.className}
           variant="h3"
           sx={{
@@ -75,7 +80,7 @@ const Servicios = () => {
           }}
         >
           Nuestros Servicios
-        </Typography>
+        </Typography> */}
       </Grid>
       {servicios.map((item, index) => {
         return (

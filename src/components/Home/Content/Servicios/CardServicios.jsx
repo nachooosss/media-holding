@@ -8,7 +8,6 @@ import { Bebas_Neue } from "next/font/google";
 const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 
 export default function CardServicios(props) {
-  console.log(props.name.bgImg);
   return (
     <Card className="cardServicios">
       <Grid container>
@@ -23,15 +22,39 @@ export default function CardServicios(props) {
         >
           <SvgIcon
             component={props.name.icon}
-            sx={{ fontSize: 100 }}
+            sx={{ fontSize: 120 }}
             inheritViewBox
           />
         </Grid>
+
+        <Grid item xs={12}>
+          <CardMedia
+            sx={{
+              height: 220,
+              borderRadius: "25px",
+              backgroundImage: `url(${props.name.bgImg.src});`,
+              overflow: "hidden",
+            }}
+          >
+            <SvgIcon
+              component={props.name.icon}
+              sx={{
+                fontSize: 260,
+                float: "left",
+                marginLeft: "-100px",
+                marginTop: 8,
+                opacity: "0.6",
+                position: "relative",
+              }}
+              inheritViewBox
+            />
+          </CardMedia>
+        </Grid>
         <Grid item xs={12}>
           <Typography
-            className={inter.className}
+            // className={inter.className}
             gutterBottom
-            variant="h5"
+            variant="h6"
             component="div"
             sx={{
               display: "flex",
@@ -43,32 +66,12 @@ export default function CardServicios(props) {
             {props.name.name}
           </Typography>
         </Grid>
-        <Grid item xs={12}>
-          <CardMedia
-            sx={{
-              height: 180,
-              borderRadius: "10px",
-              backgroundImage: `url(${props.name.bgImg.src});`,
-            }}
-          >
-            <SvgIcon
-              component={props.name.icon}
-              sx={{
-                fontSize: 200,
-                float: "right",
-                marginRight: "-80px",
-                marginTop: "-10px",
-              }}
-              inheritViewBox
-            />
-          </CardMedia>
-        </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={8}>
           <Typography
-            className={inter.className}
+            // className={inter.className}
             variant="subtitle1"
             color="white"
-            align="justify"
+            align="left"
             sx={{
               marginBlock: "15px",
             }}
@@ -78,24 +81,24 @@ export default function CardServicios(props) {
         </Grid>
         <Grid
           item
-          xs={12}
+          xs={4}
           sx={{
             display: "flex",
             justifyContent: "end",
             alignItems: "end",
-            height: "100%",
           }}
         >
           <Button
-            className={inter.className}
+            // className={inter.className}
             variant="outlined"
             sx={{
+              borderRadius: 8,
               border: "1px solid orange",
               color: orange[700],
-              fontSize: 20,
+              textTransform: "none",
             }}
           >
-            Ver más
+            ver más
           </Button>
         </Grid>
       </Grid>
