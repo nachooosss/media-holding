@@ -6,7 +6,7 @@ import bgimg from "@/assets/background/bgtestimonios.jpg";
 const Content = () => {
   return (
     <div>
-      <div
+      {/* <div
         style={{
           paddingTop: 15,
           position: "relative",
@@ -16,7 +16,7 @@ const Content = () => {
         }}
       >
         <Testimonios></Testimonios>
-      </div>
+      </div> */}
       <div
         style={{
           position: "relative",
