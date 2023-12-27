@@ -11,56 +11,102 @@ import {
   LinkedIn,
 } from "@mui/icons-material";
 import { Divider, Grid } from "@mui/material";
-
+import ImgFooter from "@/assets/background/bgheader.jpg";
 import { Bebas_Neue } from "next/font/google";
+import Consultas from "../Content/Consultas/Consultas";
 const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
 export default function Footer() {
   return (
     <AppBar
       position="sticky"
       sx={{
-        backgroundColor: "rgba(255, 139, 37, 0.8)",
-        color: "white",
+        backgroundColor: "orange",
+        color: "black",
       }}
     >
       <Toolbar>
-        <Grid container sx={{ padding: 10, cursor: "default", fontSize: 20 }}>
-          <Grid item xs={3}>
-            Media Holding
+        <Grid
+          container
+          sx={{
+            padding: 5,
+            cursor: "default",
+            fontSize: 20,
+          }}
+        >
+          <Grid item xs={7}>
+            <Consultas></Consultas>
+          </Grid>
+          <Grid item xs={5}>
+            <img
+              src={ImgFooter.src}
+              style={{
+                marginLeft: "30px",
+                borderRadius: "40px",
+                backgroundSize: "100%, 100%",
+                width: "580px",
+                height: "300px",
+              }}
+            />
+          </Grid>
+          <Grid item xs={3} sx={{ textAlign: "justify" }}>
+            <div style={{ fontWeight: "bold", marginBottom: "10px" }}>
+              Media Holding
+            </div>
             <br />
+            Lorem ipsum dolor sit amet
             <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
-            ex?
+            consectetur adipisicing elit.
+            <br />
+            Impedit, ex? Impedit, ex?
           </Grid>
           <Grid item xs={3}>
-            Servicios <br /> <br /> Servicios Impresión Digital <br /> Servicios
-            Eventos/Ferias <br />
-            Exhibidores Personalizados <br /> Servicios de Letreros <br />{" "}
+            <div style={{ fontWeight: "bold", marginBottom: "10px" }}>
+              Servicios
+            </div>
+            <br /> Servicios Impresión Digital <br /> Servicios Eventos/Ferias
+            <br />
+            Exhibidores Personalizados <br /> Servicios de Letreros <br />
             Servicios Asesoría <br />
             Servicios BTL
           </Grid>
           <Grid item xs={3}>
-            Contacto <br /> <br /> Teléfono 390-2893 <br /> Correo
-            contacto@mh.com.pa
+            <div style={{ fontWeight: "bold", marginBottom: "10px" }}>
+              Contacto
+            </div>
+            <br /> Teléfono 390-2893 <br /> Correo contacto@mh.com.pa
+            <div style={{ fontWeight: "bold", marginTop: "10px" }}>
+              Dirección
+            </div>{" "}
+            Villa Las Acacias, Calle 139
+            <br />
+            Este, Lote 23 Panamá, Juan Diaz,
+            <br />
+            07101, PA.{" "}
           </Grid>
           <Grid item xs={3}>
-            Dirección <br /> <br /> Villa Las Acacias, Calle 139 Este, Lote 23
-            Panamá, Juan Diaz, 07101, PA. <br /> <br /> Lunes – Viernes Abierto{" "}
-            <br /> Sábado – Domingo Cerrado
+            <div style={{ fontWeight: "bold", marginBottom: "10px" }}>
+              Horario
+            </div>{" "}
+            <br /> Lunes – Viernes Abierto <br /> Sábado – Domingo Cerrado
           </Grid>
         </Grid>
       </Toolbar>
-      <Divider sx={{ height: "1px", backgroundColor: "white" }} />
-      <Toolbar>
+      {/* <Divider sx={{ height: "1px", backgroundColor: "white" }} /> */}
+      <Toolbar sx={{ backgroundColor: "black" }}>
         <Typography
-          className={inter.className}
+          // className={inter.className}
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, cursor: "default" }}
+          sx={{
+            flexGrow: 1,
+            cursor: "default",
+            textAlign: "center",
+            color: "white",
+          }}
         >
-          Copyright © 2024
+          Copyright © 2000-20003 Media Holding
         </Typography>
-        <Typography
+        {/* <Typography
           variant="h6"
           component="div"
           sx={{ flexGrow: 0, mx: 5, fontSize: "50" }}
@@ -69,7 +115,7 @@ export default function Footer() {
           <Twitter sx={{ fontSize: "30px", mx: 2 }}></Twitter>
           <Instagram sx={{ fontSize: "30px", mx: 2 }}></Instagram>
           <LinkedIn sx={{ fontSize: "30px", mx: 2 }}></LinkedIn>
-        </Typography>
+        </Typography> */}
       </Toolbar>
     </AppBar>
   );
