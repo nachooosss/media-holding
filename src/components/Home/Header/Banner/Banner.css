@@ -1,16 +1,20 @@
 .cover {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: end;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100dvw;
   height: 100dvh;
-  background-image: url(../../../../assets/background/bgheader.jpg);
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../../../../assets/background/bgheader.jpg);
 }
 .titleTxt {
-  margin-right: 2;
-  font-weight: 700;
+  margin-left: 100px;
+  margin-bottom: 100px;
   color: white;
   cursor: default;
+  text-shadow: 10px 10px 7px black;
+  text-align: left;
 }

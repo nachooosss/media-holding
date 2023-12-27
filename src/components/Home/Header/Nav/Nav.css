@@ -1,7 +1,8 @@
 .navbar {
   position: absolute;
-  background-color: transparent;
+  background-color: black;
   box-shadow: none;
+  padding-inline: 20px;
 }
 .grid-navbar {
   display: flex;
@@ -10,23 +11,22 @@
 }
 .btnNav {
   margin-inline: 20px;
-  color: inherit;
+  margin-bottom: -25px;
+  color: orange;
   display: block;
-  font-size: x-large;
+  font-size: medium;
+  text-transform: none;
 }
 
 .logo {
-  margin-right: 2px;
-  font-size: 100px;
+  width: 300px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .grid-btn {
   display: flex;
   justify-content: end;
   align-items: center;
-}
-
-.txt-Logo {
-  font-weight: 700;
-  cursor: default;
 }

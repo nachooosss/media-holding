@@ -1,37 +1,16 @@
 "use client";
-import AdbIcon from "@mui/icons-material/Adb";
-import { Grid, AppBar, Typography, Button, Box, SvgIcon } from "@mui/material";
+import { Grid, AppBar, Button, Box, SvgIcon } from "@mui/material";
 import "./Nav.css";
-import { Bebas_Neue } from "next/font/google";
 import MenuIcon from "@/assets/SVG/menuIcon.svg";
-
-const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
+import LogoMH from "@/assets/Logo/MH-VERTICAL.png";
 
 function Nav() {
-  const pages = [
-    "Inicio",
-    "Servicios",
-    "Publicaciones",
-    "Nosotros",
-    "Contacto",
-  ];
-  const styles = (theme) => ({
-    root: {
-      backgroundColor: "blue",
-      [theme.breakpoints.between("xs", "md")]: {
-        backgroundColor: "red",
-      },
-    },
-  });
-
+  const pages = ["inicio", "nosotros", "servicios", "experiencias", "contacto"];
   return (
     <AppBar className="navbar">
       <Grid container>
         <Grid className="grid-navbar" item lg={5} xs={4}>
-          <AdbIcon className="logo" />
-          <Typography className={inter.className + " txt-Logo"} variant="h3">
-            Media Holding
-          </Typography>
+          <img className="logo" src={LogoMH.src} srcSet={LogoMH.src} />
         </Grid>
         <Box
           component={Grid}
@@ -44,11 +23,7 @@ function Nav() {
           }}
         >
           {pages.map((page) => (
-            <Button
-              key={page}
-              className={inter.className + " btnNav"}
-              variant="text"
-            >
+            <Button key={page} className={" btnNav"} variant="text">
               {page}
             </Button>
           ))}
