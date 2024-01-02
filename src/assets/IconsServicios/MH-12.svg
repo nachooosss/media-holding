@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792 792">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 5.93px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #f26a33;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #f26a33;
+        stroke-width: 2.73px;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: 5.33px;
+      }
+
+      .cls-4 {
+        stroke-width: 5.15px;
+      }
+
+      .cls-5 {
+        stroke-width: 18px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polygon class="cls-4" points="299.63 182.87 331.65 501.84 381.45 533.86 387.38 686.82 381.45 533.86 485.8 518.44 425.33 169.83 299.63 182.87"/>
+    <polyline class="cls-4" points="485.8 518.44 491.73 667.85 387.38 686.82"/>
+    <path class="cls-1" d="m387.38,686.82l-53.36-41.5-2.37-143.48-32.02-318.97s-3.56-60.45,49.8-65.22c66.4-5.93,75.89,52.17,75.89,52.17"/>
+    <polygon class="cls-4" points="412.28 182.87 323.35 193.54 387.38 519.63 470.39 506.59 412.28 182.87"/>
+    <polygon class="cls-2" points="338.77 208.96 398.05 504.21 411.1 500.66 351.81 205.4 338.77 208.96"/>
+    <polygon class="cls-2" points="362.17 204.24 421.46 499.5 434.5 495.94 375.21 200.68 362.17 204.24"/>
+    <polygon class="cls-2" points="385.88 201.87 445.17 497.12 458.22 493.57 398.93 198.31 385.88 201.87"/>
+    <path class="cls-3" d="m315.05,181.68s-4-45.75,38.77-50.56c53.23-5.99,57.27,38.7,57.27,38.7"/>
+  </g>
+  <circle class="cls-5" cx="390.59" cy="399.56" r="341.56"/>
+</svg>
