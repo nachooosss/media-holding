@@ -28,7 +28,7 @@ export default function Consultas() {
             p: 5,
           }}
         >
-          <Grid itme xs={4}>
+          <Grid item xs={4}>
             <Typography
               // className={inter.className}
               sx={{
@@ -78,7 +78,7 @@ export default function Consultas() {
           >
             <TextField
               id="outlined-basic"
-              label="Introduce tu nombre"
+              label="Introduce tu correo"
               variant="outlined"
               fullWidth
               InputProps={{
@@ -90,7 +90,7 @@ export default function Consultas() {
           </Grid>
           <Grid
             item
-            xs={12}
+            xs={10}
             sx={{
               my: 1,
               display: "flex",
@@ -109,6 +109,32 @@ export default function Consultas() {
                 },
               }}
             />
+          </Grid>
+          <Grid
+            item
+            xs={2}
+            sx={{
+              my: 1,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <Button
+              variant="contained"
+              fullWidth
+              sx={{
+                borderRadius: 8,
+                border: "1px solid orange",
+                background: orange[700],
+                color: "white",
+                textTransform: "none",
+                padding: 2,
+                marginLeft: 2,
+              }}
+            >
+              Enviar
+            </Button>
           </Grid>
         </Grid>
       </CardActions>
