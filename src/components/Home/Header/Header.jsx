@@ -6,10 +6,10 @@ const Header = () => {
   return (
     <div className="containerMy">
       <Grid container>
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Banner></Banner>
         </Grid>
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Nav></Nav>
         </Grid>
       </Grid>

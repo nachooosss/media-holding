@@ -11,7 +11,7 @@ import {
   LinkedIn,
 } from "@mui/icons-material";
 import { Divider, Grid } from "@mui/material";
-import ImgFooter from "@/assets/background/bgheader.jpg";
+import ImgFooter from "@/assets/background/bgfooter.webp";
 import { Bebas_Neue } from "next/font/google";
 import Consultas from "../Content/Consultas/Consultas";
 const inter = Bebas_Neue({ weight: ["400"], subsets: ["latin"] });
@@ -104,7 +104,7 @@ export default function Footer() {
             color: "white",
           }}
         >
-          Copyright © 2000-20003 Media Holding
+          Copyright © 2000-2024 Media Holding
         </Typography>
         {/* <Typography
           variant="h6"

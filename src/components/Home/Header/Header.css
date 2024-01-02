@@ -1,5 +1,6 @@
 .containerMy {
   position: relative;
-  width: 100dvw;
+  width: 99dvw;
   height: 100dvh;
+  margin-left: -5px;
 }
