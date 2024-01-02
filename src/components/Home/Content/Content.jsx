@@ -1,7 +1,7 @@
 import React from "react";
 import Testimonios from "./Testimonios/Testimonios";
 import Consultas from "./Consultas/Consultas";
-import bgimg from "@/assets/background/bgtestimonios.jpg";
+// import bgimg from "@/assets/background/bgtestimonios.jpg";
 
 const Content = () => {
   return (
